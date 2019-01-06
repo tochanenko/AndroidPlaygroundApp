@@ -1,14 +1,18 @@
 package com.tochanenko.kotlinplayground
 
+import android.graphics.Typeface
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.CheckBox
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
 
     lateinit var tv : TextView
     lateinit var button : Button
+    lateinit var checkBox : CheckBox
+    var boldText : Boolean = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -20,6 +24,17 @@ class MainActivity : AppCompatActivity() {
         tv.text = getString(R.string.hello)
         button.setOnClickListener {
             tv.text = "Oh hello There!"
+        }
+
+        checkBox.setOnCheckedChangeListener { buttonView, isChecked ->
+            if (boldText) {
+                boldText = false
+                tv.setTypeface(null, Typeface.BOLD)
+            }
+            else {
+                boldText = true
+                tv.setTypeface(null, Typeface.NORMAL)
+            }
         }
     }
 }
