@@ -20,6 +20,7 @@ class MainActivity : AppCompatActivity() {
 
         tv = findViewById(R.id.helloTextView)
         button = findViewById(R.id.button)
+        checkBox = findViewById(R.id.checkBox)
 
         tv.text = getString(R.string.hello)
         button.setOnClickListener {
