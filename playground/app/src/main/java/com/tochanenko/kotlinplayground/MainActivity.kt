@@ -30,11 +30,11 @@ class MainActivity : AppCompatActivity() {
         checkBox.setOnCheckedChangeListener { buttonView, isChecked ->
             if (boldText) {
                 boldText = false
-                tv.setTypeface(null, Typeface.BOLD)
+                tv.setTypeface(null, Typeface.NORMAL)
             }
             else {
                 boldText = true
-                tv.setTypeface(null, Typeface.NORMAL)
+                tv.setTypeface(null, Typeface.BOLD)
             }
         }
     }
