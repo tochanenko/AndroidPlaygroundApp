@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">KotlinPlayground</string>
     <string name="hello">Hello!</string>
+    <string name="button_string">New Button</string>
 </resources>
