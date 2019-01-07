@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
             tv.text = "Oh hello There!"
         }
 
-        checkBox.setOnCheckedChangeListener { buttonView, isChecked ->
+        checkBox.setOnCheckedChangeListener { _, _ ->
             if (boldText) {
                 boldText = false
                 tv.setTypeface(null, Typeface.NORMAL)
