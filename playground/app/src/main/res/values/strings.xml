@@ -2,4 +2,6 @@
     <string name="app_name">KotlinPlayground</string>
     <string name="hello">Hello!</string>
     <string name="button_string">New Button</string>
+    <string name="text_test">Text Test</string>
+    <string name="bold_text">Bold Text</string>
 </resources>
