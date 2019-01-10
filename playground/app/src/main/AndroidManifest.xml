@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".TextTest">
         </activity>
+        <activity android:name=".ViewsActivity">
+        </activity>
     </application>
 
 </manifest>
