@@ -20,6 +20,8 @@
         </activity>
         <activity android:name=".ViewsActivity">
         </activity>
+        <activity android:name=".RoarActivity">
+        </activity>
     </application>
 
 </manifest>

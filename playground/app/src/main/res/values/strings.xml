@@ -5,4 +5,8 @@
     <string name="text_test">Text Test</string>
     <string name="bold_text">Bold Text</string>
     <string name="views_activity">Views Activity</string>
+    <string name="click_the_tiger">Дотокнісь до тигра</string>
+    <string name="kus">Кусь!!!</string>
+    <string name="purr">Мууррр...</string>
+    <string name="road_tiger_danger">Road (Tiger) [Danger!]</string>
 </resources>

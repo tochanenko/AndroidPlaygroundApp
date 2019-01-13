@@ -18,9 +18,7 @@ class TextTest : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_text_test)
 
-        tv = findViewById(R.id.helloTextView)
-        button = findViewById(R.id.button)
-        checkBox = findViewById(R.id.checkBox)
+        connectViews()
 
         tv.text = getString(R.string.hello)
         button.setOnClickListener {
@@ -37,5 +35,12 @@ class TextTest : AppCompatActivity() {
                 tv.setTypeface(null, Typeface.BOLD)
             }
         }
+    }
+
+    //  Connects Kotlin and XML
+    private fun connectViews() {
+        tv = findViewById(R.id.helloTextView)
+        button = findViewById(R.id.button)
+        checkBox = findViewById(R.id.checkBox)
     }
 }
