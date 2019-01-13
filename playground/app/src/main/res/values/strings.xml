@@ -4,4 +4,5 @@
     <string name="button_string">New Button</string>
     <string name="text_test">Text Test</string>
     <string name="bold_text">Bold Text</string>
+    <string name="views_activity">Views Activity</string>
 </resources>

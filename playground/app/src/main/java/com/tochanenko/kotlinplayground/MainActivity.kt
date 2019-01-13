@@ -7,7 +7,8 @@ import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var textTestButton : Button
+    lateinit var buttonTextTest : Button
+    lateinit var buttonViewsActivity: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -15,8 +16,13 @@ class MainActivity : AppCompatActivity() {
 
         connectViews()
 
-        textTestButton.setOnClickListener {
+        buttonTextTest.setOnClickListener {
             val intent = Intent(this, TextTest::class.java)
+            startActivity(intent)
+        }
+
+        buttonViewsActivity.setOnClickListener {
+            val intent = Intent(this, ViewsActivity::class.java)
             startActivity(intent)
         }
 
@@ -24,6 +30,7 @@ class MainActivity : AppCompatActivity() {
 
     //  Connects Kotlin and XML
     private fun connectViews() {
-        textTestButton = findViewById(R.id.textTestButton)
+        buttonTextTest = findViewById(R.id.buttonTextTest)
+        buttonViewsActivity = findViewById(R.id.buttonViewsActivity)
     }
 }
