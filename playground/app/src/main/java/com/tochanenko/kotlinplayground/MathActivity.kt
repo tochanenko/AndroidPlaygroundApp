@@ -57,7 +57,10 @@ class MathActivity : AppCompatActivity() {
         val random = Random(System.currentTimeMillis())
         val numberOfDividers : Int = random.nextInt(3, 10)
         for (i in 1..numberOfDividers) {
-            number *= random.nextInt(2, 51)
+            var randomNumber = random.nextInt(2, 51).toLong()
+            while (!testForPrime(randomNumber))
+                randomNumber = random.nextInt(2, 51).toLong()
+            number *= randomNumber
         }
     }
 
