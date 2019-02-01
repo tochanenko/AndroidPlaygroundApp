@@ -9,4 +9,12 @@
     <string name="kus">Кусь!!!</string>
     <string name="purr">Мууррр...</string>
     <string name="road_tiger_danger">Road (Tiger) [Danger!]</string>
+    <string name="math_test">Math Test</string>
+    <string name="_000">000</string>
+    <string name="can_you">Can you find all dividers? Their number is less then 11 and they are in range of 2..51
+    </string>
+    <string name="number_is_prime">Number is prime</string>
+    <string name="submit_divider">Submit divider</string>
+    <string name="well_done">Well Done!</string>
+    <string name="ok">OK</string>
 </resources>
