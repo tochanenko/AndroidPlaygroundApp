@@ -40,15 +40,18 @@ class MathActivity : AppCompatActivity() {
         mathActivitySubmit.setOnClickListener {
             val str : String = mathActivityInputField.text.toString()
             val selectedNumber : Int
+            var wrongNumber = false
             if (str == "")
-                Toast.makeText(this, "Wrong number!", Toast.LENGTH_SHORT).show()
+                wrongNumber = true
             else {
                 selectedNumber = str.toInt()
-                if ((selectedNumber in 2..number) and (number % selectedNumber == 0.toLong()))
+                if ((selectedNumber in 2..number) && (number % selectedNumber == 0.toLong()))
                     number /= selectedNumber
                 else
-                    Toast.makeText(this, "Wrong number!", Toast.LENGTH_SHORT).show()
+                    wrongNumber = true
             }
+            if (wrongNumber)
+                Toast.makeText(this, "Wrong number!", Toast.LENGTH_SHORT).show()
             updateViews()
         }
     }
@@ -57,9 +60,9 @@ class MathActivity : AppCompatActivity() {
         val random = Random(System.currentTimeMillis())
         val numberOfDividers : Int = random.nextInt(3, 10)
         for (i in 1..numberOfDividers) {
-            var randomNumber = random.nextInt(2, 51).toLong()
+            var randomNumber = random.nextInt(2, 20).toLong()
             while (!testForPrime(randomNumber))
-                randomNumber = random.nextInt(2, 51).toLong()
+                randomNumber = random.nextInt(2, 20).toLong()
             number *= randomNumber
         }
     }
