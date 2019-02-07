@@ -64,10 +64,8 @@ class MathActivity : AppCompatActivity() {
             wrongNumber = true
         else {
             selectedNumber = str.toLong()
-            if ((selectedNumber == 1.toLong()) || (selectedNumber == number)) {
+            if ((selectedNumber == 1.toLong()) || (selectedNumber == number))
                 Toast.makeText(this, "LOL! You can't fool me!", Toast.LENGTH_SHORT).show()
-                wrongNumber = true
-            }
             else if ((selectedNumber in 2..(number - 1)) && (number % selectedNumber == 0.toLong()))
                 number /= selectedNumber
             else
