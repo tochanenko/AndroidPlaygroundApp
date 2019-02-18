@@ -1,6 +1,7 @@
 package com.tochanenko.kotlinplayground
 
 import android.content.Intent
+import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -11,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var buttonViewsActivity: Button
     lateinit var buttonRoarActivity: Button
     lateinit var buttonMathTest : Button
+    lateinit var buttonCheckForUpdates: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,6 +40,12 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        buttonCheckForUpdates.setOnClickListener {
+            val uri = Uri.parse("https://github.com/tochanenko/AndroidPlayground/releases")
+            val intent = Intent(Intent.ACTION_VIEW, uri)
+            startActivity(intent)
+        }
+
     }
 
     //  Connects Kotlin and XML
@@ -46,5 +54,6 @@ class MainActivity : AppCompatActivity() {
         buttonViewsActivity = findViewById(R.id.buttonViewsActivity)
         buttonRoarActivity = findViewById(R.id.buttonRoarActivity)
         buttonMathTest = findViewById(R.id.buttonMathTest)
+        buttonCheckForUpdates = findViewById(R.id.buttonCheckForUpdates)
     }
 }
