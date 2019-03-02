@@ -18,4 +18,5 @@
     <string name="well_done">Well Done!</string>
     <string name="ok">OK</string>
     <string name="check_for_updates">Check for Updates</string>
+    <string name="list_view">List View</string>
 </resources>

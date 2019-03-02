@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var buttonRoarActivity: Button
     lateinit var buttonMathTest : Button
     lateinit var buttonCheckForUpdates: Button
+    lateinit var buttonListView: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -46,6 +47,11 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        buttonListView.setOnClickListener {
+            val intent = Intent(this, ListViewActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 
     //  Connects Kotlin and XML
@@ -55,5 +61,6 @@ class MainActivity : AppCompatActivity() {
         buttonRoarActivity = findViewById(R.id.buttonRoarActivity)
         buttonMathTest = findViewById(R.id.buttonMathTest)
         buttonCheckForUpdates = findViewById(R.id.buttonCheckForUpdates)
+        buttonListView = findViewById(R.id.buttonListView)
     }
 }
