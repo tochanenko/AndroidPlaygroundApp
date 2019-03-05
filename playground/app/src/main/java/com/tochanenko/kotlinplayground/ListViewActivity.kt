@@ -14,9 +14,7 @@ class ListViewActivity : AppCompatActivity() {
 
         connectViews()
 
-
-
-        val array: Array<LinkClass> = arrayOf<LinkClass>(
+        val array: Array<LinkClass> = arrayOf(
                 LinkClass("Github", "GitHub is a web-based hosting service for version control using Git. It is mostly used for computer code. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features.","https://github.com/"),
                 LinkClass("Visual Studio Code", "Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring. It is also customizable, so users can change the editor's theme, keyboard shortcuts, and preferences. The source code is free and open source and released under the permissive MIT License. The compiled binaries are freeware and free for private or commercial use","https://code.visualstudio.com/"),
                 LinkClass("Kotlin", "Kotlin is a cross-platform, statically typed, general-purpose programming language with type inference. Kotlin is designed to interoperate fully with Java, and the JVM version of its standard library depends on the Java Class Library, but type inference allows its syntax to be more concise. Kotlin mainly targets the JVM, but also compiles to JavaScript or native code (via LLVM). Kotlin is sponsored by JetBrains and Google through the Kotlin Foundation","https://kotlinlang.org/"),
