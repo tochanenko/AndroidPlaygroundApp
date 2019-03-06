@@ -3,25 +3,22 @@ package com.tochanenko.kotlinplayground
 import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.view.KeyEvent
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import kotlin.random.Random
-import android.view.KeyEvent.KEYCODE_ENTER
-import android.view.View
 import android.view.inputmethod.EditorInfo
 
 
 class MathActivity : AppCompatActivity() {
 
-    lateinit var mathActivityInputField : EditText
-    lateinit var mathActivityPrimeNumber : Button
-    lateinit var mathActivityNumber : TextView
-    lateinit var mathActivitySubmit : Button
+    private lateinit var mathActivityInputField : EditText
+    private lateinit var mathActivityPrimeNumber : Button
+    private lateinit var mathActivityNumber : TextView
+    private lateinit var mathActivitySubmit : Button
 
-    var number : Long = 1
+    private var number : Long = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
