@@ -9,7 +9,7 @@ import android.widget.BaseAdapter
 import android.widget.TextView
 
 class MainMenuAdapter(
-    private val context: Context,
+    context: Context,
     private val dataSource: Array<MainMenuClass?>
 ) : BaseAdapter() {
 

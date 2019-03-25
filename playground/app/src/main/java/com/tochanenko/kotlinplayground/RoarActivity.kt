@@ -8,11 +8,11 @@ import android.widget.TextView
 
 class RoarActivity : AppCompatActivity() {
 
-    lateinit var viewKus : View
-    lateinit var viewPurrLeft : View
-    lateinit var viewPurrRight : View
-    lateinit var textTiger : TextView
-    lateinit var imageTiger : ImageView
+    private lateinit var viewKus : View
+    private lateinit var viewPurrLeft : View
+    private lateinit var viewPurrRight : View
+    private lateinit var textTiger : TextView
+    private lateinit var imageTiger : ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

@@ -7,7 +7,7 @@ import android.widget.Button
 
 class WellDoneActivity : AppCompatActivity() {
 
-    lateinit var wellDoneActivityOK : Button
+    private lateinit var wellDoneActivityOK : Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

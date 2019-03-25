@@ -3,8 +3,8 @@ package com.tochanenko.kotlinplayground
 import android.annotation.SuppressLint
 import android.graphics.Typeface
 import android.os.Build
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.support.v7.app.AppCompatActivity
 import android.support.annotation.RequiresApi
 import android.text.Html
 import android.widget.Button
@@ -13,8 +13,8 @@ import android.widget.TextView
 
 class TextTest : AppCompatActivity() {
 
-    lateinit var tv : TextView
-    lateinit var strangeText : TextView
+    private lateinit var tv : TextView
+    private lateinit var strangeText : TextView
     lateinit var button : Button
     lateinit var checkBox : CheckBox
     var boldText : Boolean = false
